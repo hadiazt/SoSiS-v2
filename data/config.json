@@ -4,7 +4,7 @@
     "supportserver": "https://discord.gg/6vhPVYkNU9",
     "inv": "https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands",
     "PREFIX": "/",
-    "VER": "TESTING",
+    "VER": "v2.0.0",
     "OWNER": "490519932292038659",
     "BOT_LOG": "879420520351805511",
     "REPORT_LOG": "879427034558922802",
