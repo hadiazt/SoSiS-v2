@@ -1,0 +1,23 @@
+{
+    "clientId": "819883078934593546",
+    "token": "ODE5ODgzMDc4OTM0NTkzNTQ2.YEtFng.0bKqnohRyNZwBaZs6StkQlQLHz4",
+    "supportserver": "https://discord.gg/6vhPVYkNU9",
+    "inv": "https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands",
+    "PREFIX": "/",
+    "VER": "TESTING",
+    "OWNER": "490519932292038659",
+    "BOT_LOG": "879420520351805511",
+    "REPORT_LOG": "879427034558922802",
+    "ACTION_LOG": "879418338604884049",
+    "TRUSTED": [
+        "488958506280550402",
+        "800769565877338122"
+    ],
+    "Presence": {
+        "status": "dnd",
+        "activity": {
+            "name": "help",
+            "type": "LISTENING"
+        }
+    }
+}

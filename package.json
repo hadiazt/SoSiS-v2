@@ -1,0 +1,23 @@
+{
+  "name": "sosis",
+  "version": "0.0.1",
+  "description": "the fun bot for all users",
+  "main": "index.js",
+  "author": "hadi.az",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.8.2",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "chalk": "^4.1.2",
+    "discord-ytdl-core": "^5.0.4",
+    "discord.js": "^13.3.1",
+    "ffmpeg-static": "^4.4.0",
+    "scrape-yt": "^1.4.8",
+    "ytdl-core": "^4.9.1",
+    "beta.db": "^3.0.2",
+    "random-pic.js": "^2.0.1",
+    "nekos.life": "^2.0.7",
+    "random-gif-api": "^1.0.4",
+    "canvas": "^2.8.0"
+  }
+}
