@@ -17,8 +17,8 @@ module.exports = {
 *and have a good time In Discord.*
 
 **SoSiS Team:**
-<:space:874678195843125278><:right:874690882417360986> [${hadi.username}](https://github.com/hadiazt/)
-<:space:874678195843125278><:right:874690882417360986> [${mani.username}](https://github.com/Mani-Vernix)
+<:space:874678195843125278><:right:874690882417360986> [${hadi.user.tag}](https://github.com/hadiazt/)
+<:space:874678195843125278><:right:874690882417360986> [${mani.user.tag}](https://github.com/Mani-Vernix)
 `)
 
         interaction.reply({ embeds: [about] })
