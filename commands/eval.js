@@ -3,39 +3,39 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('eval')
-        .setDescription('Run EveryThing'),
+        .setDescription('Run EveryThing')
+        .addStringOption(option =>
+            option.setName('input')
+                .setDescription('Your Code ')
+                .setRequired(true)
+        ),
     async execute(interaction) {
         const { MessageEmbed } = require('discord.js');
+        const { OWNER } = require('../data/config.json');
+        var CODE = interaction.options.get('input').value;
+
         const { inspect } = require('util');
 
-        // client.on('message', async message => {
-        //   const args = message.content.split(' ');
-        //   const command = args.shift().toLowerCase();
-        
-        //   if (command === config.PREFIX + 'eval') {
-        //     // Put your userID here
-        //     if (message.author.id !== '490519932292038659') return message.inlineReply('sik kon ||kosh khesh|| :/');
-        //     if (!args.length) return;
-        //     let evaled;
-        //     try {
-        //       evaled = await eval(args.join(" "));
-        //       let evalend = new Discord.MessageEmbed()
-        //         .setTitle('Eval Result : ')
-        //         .setDescription('INPUT :\n```js\n' + args.join(" ") + '\n```\nOUTPUT :\n```js\n' + inspect(evaled) + '\n```')
-        //         .setColor("GREEN")
-        //       message.inlineReply(evalend).catch(e => { message.inlineReply('```js\n' + e + '\n```'); });
-        //     }
-        //     catch (error) {
-        //       let evalerr = new Discord.MessageEmbed()
-        //         .setTitle('Thre Was An Error : ')
-        //         .setDescription('```js\n' + error + '```')
-        //         .setColor("red")
-        //       message.inlineReply(evalerr);
-        //     }
-        //   }
-        // });
 
-        return interaction.reply('s');
+        if (interaction.user.id !== OWNER) return message.inlineReply('Opps !!! You Are Not The Bot Owner');
+        let evaled;
+        try {
+            evaled = await eval(CODE);
+            let evalend = new MessageEmbed()
+                .setTitle('Eval Result : ')
+                .setDescription('INPUT :\n```js\n' + CODE + '\n```\nOUTPUT :\n```js\n' + inspect(evaled) + '\n```')
+                .setColor("GREEN")
+            interaction.reply({ embeds: [evalend] }).catch(e => { interaction.reply('```js\n' + e + '\n```'); });
+        }
+        catch (error) {
+            let evalerr = new MessageEmbed()
+                .setTitle('Thre Was An Error : ')
+                .setDescription('```js\n' + error + '```')
+                .setColor("red")
+            interaction.reply({ embeds: [evalerr] })
+        }
+
+
     },
 };
 

@@ -6,8 +6,6 @@ module.exports = {
         .setDescription('Information About Us'),
     async execute(interaction, client) {
         const { MessageEmbed } = require('discord.js');
-        var hadi = client.users.cache.get('490519932292038659')
-        var mani = client.users.cache.get('744431935316688916')
 
         var about = new MessageEmbed()
             .setTitle('<:sosis_2:914467249157439488> About SoSiS:')
@@ -17,8 +15,8 @@ module.exports = {
 *and have a good time In Discord.*
 
 **SoSiS Team:**
-<:space:874678195843125278><:right:874690882417360986> [${hadi.user.tag}](https://github.com/hadiazt/)
-<:space:874678195843125278><:right:874690882417360986> [${mani.user.tag}](https://github.com/Mani-Vernix)
+<:space:874678195843125278><:right:874690882417360986> [零 hadi ZΞЯØ](https://github.com/hadiazt/)
+<:space:874678195843125278><:right:874690882417360986> [◤ vernix 𝐑𝗈мaη𝐜𝐞](https://github.com/Mani-Vernix)
 `)
 
         interaction.reply({ embeds: [about] })
