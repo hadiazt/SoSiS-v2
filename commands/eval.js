@@ -22,7 +22,7 @@ module.exports = {
         const { inspect } = require('util');
 
 
-        if (interaction.user.id !== OWNER) return message.inlineReply('Opps !!! You Are Not The Bot Owner');
+        if (interaction.user.id !== OWNER) return interaction.reply('Opps !!! You Are Not The Bot Owner');
         let evaled;
         try {
             evaled = await eval(CODE);
