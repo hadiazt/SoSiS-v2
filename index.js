@@ -11,7 +11,10 @@ const client = new Client({
 });
 const { readdirSync } = require("fs");
 const chalk = require('chalk')
+
 const config = require('./data/config.json')
+const { Database } = require('beta.db')
+const db = new Database('./data/config.json')
 
 client.login(config.token);
 
@@ -58,9 +61,10 @@ client.on('interactionCreate', async interaction => {
 	const command = client.commands.get(interaction.commandName);
 
 	if (!command) return;
-
+	var count = 43526
 	try {
 		await command.execute(interaction, client);
+		db.set('USAGE', count++)
 		client.channels.cache.get(config.ACTION_LOG).send('```\n' + `${interaction.commandName} Triggerd In ${interaction.guild.name} | ${interaction.channel.name} By ${interaction.user.tag}` + '\n```')
 	} catch (error) {
 		console.error(error);
