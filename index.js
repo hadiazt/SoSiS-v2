@@ -61,10 +61,10 @@ client.on('interactionCreate', async interaction => {
 	const command = client.commands.get(interaction.commandName);
 
 	if (!command) return;
-	var count = 43526
+
 	try {
 		await command.execute(interaction, client);
-		db.set('USAGE', count++)
+		db.add('USAGE', 1)
 		client.channels.cache.get(config.ACTION_LOG).send('```\n' + `${interaction.commandName} Triggerd In ${interaction.guild.name} | ${interaction.channel.name} By ${interaction.user.tag}` + '\n```')
 	} catch (error) {
 		console.error(error);

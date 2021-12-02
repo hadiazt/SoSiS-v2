@@ -7,7 +7,9 @@ module.exports = {
     async execute(interaction, client) {
 
         const { MessageEmbed } = require('discord.js')
-        const { VER, USAGE } = require('../data/config.json')
+        const { Database } = require('beta.db')
+        const db = new Database('./data/config.json')
+
         var MemberCount = 0;
         client.guilds.cache.forEach(Member => {
             MemberCount += Member.memberCount
@@ -23,13 +25,13 @@ module.exports = {
 
 <:space:874678195843125278><:keycapnumbersign_emoji:914500272422789161> *Channels Count : `+ '`' + client.channels.cache.size + '`' + `*
 
-<:space:874678195843125278><:counter_emoji:915916802855407656> *Commands Usage : `+ '`' + USAGE + '`' + `*
+<:space:874678195843125278><:counter_emoji:915916802855407656> *Commands Usage : `+ '`' + db.get('USAGE') + '`' + `*
 
 <:space:874678195843125278><:horizontaltrafficlight_emoji:914504404818874389> *Status : `+ '`' + client.user.presence.status + '`' + `*
 
 <:space:874678195843125278><:antennabars_emoji:914500272255025193> *Ping : `+ '`' + Math.round(client.ws.ping) + 'ms`' + `*
 
-<:space:874678195843125278><:triangularflag_emoji:914500272779296789>*Version :  `+ '`' + VER + '`' + `*
+<:space:874678195843125278><:triangularflag_emoji:914500272779296789>*Version :  `+ '`' + db.get('VER') + '`' + `*
 `)
 
         return interaction.reply({ embeds: [supportmsg] })
