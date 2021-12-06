@@ -102,7 +102,7 @@ module.exports = {
             }
 
             if (type === 'anal') {
-                async function hentai() {
+                async function anal() {
                     var x = await nekos.nsfw.anal()
 
                     var nsfwmsg = new MessageEmbed()
