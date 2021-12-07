@@ -19,6 +19,6 @@
     "nekos.life": "^2.0.7",
     "random-gif-api": "^1.0.4",
     "canvas": "^2.8.0",
-    "effects-image.js":"^1.0.1"
+    "effects-image.js":"^1.0.3"
   }
 }
