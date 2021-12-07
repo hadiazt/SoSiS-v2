@@ -33,7 +33,7 @@ __Options :__
 **:crayon: Effect Help :**
 <:space:874678195843125278><:right:874690882417360986>`+ '`' + '/effect' + '`' + `
 __Options :__
-` + '`BLUR 2 To 5`' + ` / ` + '`BRIGHTNESS 3 To 6`' + ` / ` + '`CIRCLE`' + ` / ` + '`FISHEYE`' + ` / ` + '`FLIP X To Y Or Y To X`' + ` 
+` + '`BLUR 2 To 5`' + ` / ` + '`BRIGHTNESS 3 To 6`' + ` / ` + '`CIRCLE`' + ` / ` + '`FISHEYE`' + ` / ` + '`FLIP`' + ` 
 ` + '`ROTATE 30,60,90,180`' + ` / ` + '`Normalize`' + ` / ` + '`INVERT`' + ` / ` + '`GREYSCALE`' + `
 
 <:space:874678195843125278><:right:874690882417360986>`+ '`' + '/nsfw' + '`' + `
