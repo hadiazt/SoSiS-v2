@@ -49,7 +49,7 @@ module.exports = {
                 .setLevel(2)
                 .build().then(res => {
                     interaction.reply({
-                        content: '**Here is Your Request****:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 2`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 2`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
                     })
@@ -60,12 +60,11 @@ module.exports = {
                 .setImage(user)
                 .setLevel(3)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 3`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 3`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'blur4') {
@@ -73,12 +72,11 @@ module.exports = {
                 .setImage(user)
                 .setLevel(4)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 4`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 4`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'blur5') {
@@ -86,12 +84,11 @@ module.exports = {
                 .setImage(user)
                 .setLevel(5)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 5`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 5`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'brightness3') {
@@ -99,12 +96,11 @@ module.exports = {
                 .setImage(user)
                 .setBrightness(3)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Brightness 3`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BRIGHTNESS 3`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'brightness4') {
@@ -112,12 +108,11 @@ module.exports = {
                 .setImage(user)
                 .setBrightness(4)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Brightness 4`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BRIGHTNESS 4`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'brightness5') {
@@ -125,12 +120,11 @@ module.exports = {
                 .setImage(user)
                 .setBrightness(5)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Brightness 5`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BRIGHTNESS 5`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'brightness6') {
@@ -138,36 +132,33 @@ module.exports = {
                 .setImage(user)
                 .setBrightness(6)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Brightness 6`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BRIGHTNESS 6`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'circle') {
             new effect.Circle()
                 .setImage(user)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Circle`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`CIRCLE`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'fisheye') {
             new effect.Fisheye()
                 .setImage(user)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Fisheye`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`FISHEYE`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'flipx') {
@@ -175,12 +166,11 @@ module.exports = {
                 .setImage(user)
                 .setFlipOption(true, false)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Flip X To Y`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`FLIP X To Y`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'flipy') {
@@ -188,48 +178,44 @@ module.exports = {
                 .setImage(user)
                 .setFlipOption(false, true)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Flip Y To X`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`FLIP Y To X`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'greyscale') {
             new effect.Greyscale()
                 .setImage(user)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Greyscale`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`GREYSCALE`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'invert') {
             new effect.Invert()
                 .setImage(user)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Invert`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`INVERT`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'normalize') {
             new effect.Normalize()
                 .setImage(user)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Normalize`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`NORMALIZE`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'rotate30') {
@@ -237,12 +223,11 @@ module.exports = {
                 .setImage(user)
                 .setRotate(30)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Rotate 30`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`ROTATE 30`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'rotate60') {
@@ -250,12 +235,11 @@ module.exports = {
                 .setImage(user)
                 .setRotate(60)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Rotate 60`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`ROTATE 60`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'rotate90') {
@@ -263,12 +247,11 @@ module.exports = {
                 .setImage(user)
                 .setRotate(90)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Rotate 90`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`ROTATE 90`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
         if (type === 'rotate180') {
@@ -276,12 +259,11 @@ module.exports = {
                 .setImage(user)
                 .setRotate(180)
                 .build().then(res => {
-                    var effectmsg = new MessageEmbed()
-                        .setTitle('Here is Your Request')
-                        .setDescription("**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`Rotate 180`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*")
-                        .setImage(res)
-                        .setColor('#0fe694')
-                    return interaction.reply({ embeds: [effectmsg] });
+                    interaction.reply({
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`ROTATE 180`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                            { attachment: res }
+                        ]
+                    })
                 })
         }
 
