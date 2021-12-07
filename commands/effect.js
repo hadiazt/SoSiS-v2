@@ -18,8 +18,7 @@ module.exports = {
                 .addChoice('BRIGHTNESS 6', 'brightness6')
                 .addChoice('CIRCLE', 'circle')
                 .addChoice('FISHEYE', 'fisheye')
-                .addChoice('FLIP X To Y', 'flipx')
-                .addChoice('FLIP Y To X', 'flipy')
+                .addChoice('FLIP', 'flipx')
                 .addChoice('GREYSCALE', 'greyscale')
                 .addChoice('INVERT', 'invert')
                 .addChoice('Normalize', 'normalize')
@@ -168,18 +167,6 @@ module.exports = {
                 .build().then(res => {
                     interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`FLIP X To Y`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
-                            { attachment: res }
-                        ]
-                    })
-                })
-        }
-        if (type === 'flipy') {
-            new effect.Flip()
-                .setImage(user)
-                .setFlipOption(false, true)
-                .build().then(res => {
-                    interaction.reply({
-                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`FLIP Y To X`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
                     })
