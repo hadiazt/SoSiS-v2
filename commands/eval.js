@@ -9,14 +9,15 @@ module.exports = {
                 .setDescription('Your Code ')
                 .setRequired(true)
         ),
-    async execute(interaction) {
+    async execute(interaction, client) {
         const { MessageEmbed } = require('discord.js');
         const { OWNER } = require('../data/config.json');
 
         const { Database } = require('beta.db')
         const afkdb = new Database('./data/afk.json')
         const lovedb = new Database("./data/love.json")
-
+        const bot = client;
+        
         var CODE = interaction.options.get('input').value;
 
         const { inspect } = require('util');

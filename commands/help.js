@@ -30,6 +30,12 @@ __Options :__
 ` + '`SLAP`' + ` / ` + '`KISS`' + ` / ` + '`BITE`' + ` / ` + '`KILL`' + ` / ` + '`TICKLE`' + ` 
 ` + '`LICK`' + ` / ` + '`PUNCH`' + ` / ` + '`PAT`' + ` / ` + '`HUG`' + ` / ` + '`SPANK`' + `
 
+**:crayon: Effect Help :**
+<:space:874678195843125278><:right:874690882417360986>`+ '`' + '/effect' + '`' + `
+__Options :__
+` + '`BLUR 2 To 5`' + ` / ` + '`BRIGHTNESS 3 To 6`' + ` / ` + '`CIRCLE`' + ` / ` + '`FISHEYE`' + ` / ` + '`FLIP X To Y Or Y To X`' + ` 
+` + '`ROTATE 30,60,90,180`' + ` / ` + '`Normalize`' + ` / ` + '`INVERT`' + ` / ` + '`GREYSCALE`' + `
+
 <:space:874678195843125278><:right:874690882417360986>`+ '`' + '/nsfw' + '`' + `
 __Options :__
 ` + '`HENTAI`' + ` / ` + '`NEKO`' + ` / ` + '`LESBIAN`' + ` / ` + '`CUMSLUTS`' + `
@@ -42,7 +48,7 @@ __Options :__
 ` + '`LANDSCAPE`' + ` / ` + '`ANIME`' + ` / ` + '`ANIMAL`' + ` / ` + '`RANDOM`' + `
 
 **<:information_emoji:914129757195620402> Other Help :**
-<:space:874678195843125278><:right:874690882417360986>`+ '`' + '/aboutus' + '`' + `
+<:space:874678195843125278><:right:874690882417360986>`+ '`' + '/about' + '`' + `
 <:space:874678195843125278><:right:874690882417360986>`+ '`' + '/support' + '`' + ` 
 <:space:874678195843125278><:right:874690882417360986>`+ '`' + '/invite' + '`' + ` 
 <:space:874678195843125278><:right:874690882417360986>`+ '`' + '/stats' + '`' + ` 
