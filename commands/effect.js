@@ -163,10 +163,9 @@ module.exports = {
         if (type === 'flipx') {
             new effect.Flip()
                 .setImage(user)
-                .setFlipOption(true, false)
                 .build().then(res => {
                     interaction.reply({
-                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`FLIP X To Y`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
+                        content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`FLIP`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
                     })
