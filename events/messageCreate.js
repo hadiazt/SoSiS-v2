@@ -16,7 +16,7 @@ module.exports = {
             if (message.content.includes('@here') || message.content.includes('@everyone')) return false;
             if (afkdb.has(user.id + '.afk')) {
                 var r = afkdb.get(user.id + '.messageafk')
-                message.channel.send(`<@${user.id}> Is AFK In DB\nReason : ${r} `);
+                return message.channel.send(`<@${user.id}> Is AFK In DB\nReason : ${r} `);
             }
 
         });

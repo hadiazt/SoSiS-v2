@@ -15,11 +15,11 @@ module.exports = {
 
 
     var r = interaction.options.get('reason').value;
-
-    interaction.reply(`You Are Now AFK In DB\nReason : ${r}`);
+    
     afkdb.set(interaction.user.id + '.afk', 'true');
     afkdb.set(interaction.user.id + '.messageafk', `${r}`);
 
+    return interaction.reply(`You Are Now AFK In DB\nReason : ${r}`);
 
   },
 };
