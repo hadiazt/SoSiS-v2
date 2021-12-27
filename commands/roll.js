@@ -6,6 +6,6 @@ module.exports = {
 		.setDescription('Roll From 1 To 100'),
 	async execute(interaction) {
 		var rating = Math.floor(Math.random() * 100) + 1;
-		await interaction.reply(String(rating));
+		interaction.reply(String(rating));
 	},
 };

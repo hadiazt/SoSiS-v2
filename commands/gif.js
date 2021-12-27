@@ -35,8 +35,8 @@ module.exports = {
 
         var user = interaction.options.getUser('user')
 
-        if (user.bot === true) await interaction.reply('Bots Are Not Allowed');
-        if (user.id === interaction.user.id) await interaction.reply('Please Mention Some One Else');
+        if (user.bot === true) interaction.reply('Bots Are Not Allowed');
+        if (user.id === interaction.user.id) interaction.reply('Please Mention Some One Else');
 
         if (type === 'slap') {
             async function slapgwork() {

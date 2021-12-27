@@ -35,6 +35,6 @@ module.exports = {
 <:space:874678195843125278><:triangularflag_emoji:914500272779296789>*Version :  `+ '`' + db.get('VER') + '`' + `*
 `)
 
-        await interaction.reply({ embeds: [supportmsg] })
+        interaction.reply({ embeds: [supportmsg] })
     }
 }

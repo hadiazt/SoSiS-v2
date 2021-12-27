@@ -216,7 +216,7 @@ module.exports = {
 
 
         } else {
-            await interaction.reply('This Command Works Only In **NSFW** Channels');
+            interaction.reply('This Command Works Only In **NSFW** Channels');
         }
 
     },

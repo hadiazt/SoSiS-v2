@@ -20,6 +20,6 @@ module.exports = {
                 .setURL(inv),
         )
 
-        await interaction.reply({ embeds: [invmsg], components: [linkinv] })
+        interaction.reply({ embeds: [invmsg], components: [linkinv] })
     }
 }

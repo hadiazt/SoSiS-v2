@@ -47,7 +47,7 @@ module.exports = {
         //         return interaction.editReply('<a:cross:853953928269660180> | 404 Not Found\nError: ' + e)
         //     }
         // } else {
-        //     await interaction.reply('<a:cross:853953928269660180> | Please Enter A YT Video Link');
+        //     interaction.reply('<a:cross:853953928269660180> | Please Enter A YT Video Link');
         // }
         
     }

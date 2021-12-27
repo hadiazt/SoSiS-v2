@@ -30,7 +30,7 @@ module.exports = {
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`BOY`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
                     .setImage(response)
                     .setColor('#0fe694')
-                await interaction.reply({ embeds: [profilemsg] });
+                interaction.reply({ embeds: [profilemsg] });
             })
         }
 
@@ -41,7 +41,7 @@ module.exports = {
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`GIRL`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
                     .setImage(response)
                     .setColor('#0fe694')
-                await interaction.reply({ embeds: [profilemsg] });
+                interaction.reply({ embeds: [profilemsg] });
             })
         }
 
@@ -52,7 +52,7 @@ module.exports = {
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`E-BOY`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
                     .setImage(response)
                     .setColor('#0fe694')
-                await interaction.reply({ embeds: [profilemsg] });
+                interaction.reply({ embeds: [profilemsg] });
             })
         }
 
@@ -63,7 +63,7 @@ module.exports = {
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`E-GIRL`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
                     .setImage(response)
                     .setColor('#0fe694')
-                await interaction.reply({ embeds: [profilemsg] });
+                interaction.reply({ embeds: [profilemsg] });
             })
         }
 
@@ -74,7 +74,7 @@ module.exports = {
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`COUPLE`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
                     .setImage(response)
                     .setColor('#0fe694')
-                await interaction.reply({ embeds: [profilemsg] });
+                interaction.reply({ embeds: [profilemsg] });
             })
         }
 
@@ -85,7 +85,7 @@ module.exports = {
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`LANDSCAPE`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
                     .setImage(response)
                     .setColor('#0fe694')
-                await interaction.reply({ embeds: [profilemsg] });
+                interaction.reply({ embeds: [profilemsg] });
             })
         }
 
@@ -96,7 +96,7 @@ module.exports = {
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`ANIME`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
                     .setImage(response)
                     .setColor('#0fe694')
-                await interaction.reply({ embeds: [profilemsg] });
+                interaction.reply({ embeds: [profilemsg] });
             })
         }
 
@@ -107,7 +107,7 @@ module.exports = {
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`ANIMAL`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
                     .setImage(response)
                     .setColor('#0fe694')
-                await interaction.reply({ embeds: [profilemsg] });
+                interaction.reply({ embeds: [profilemsg] });
             })
         }
 
@@ -118,7 +118,7 @@ module.exports = {
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`RANDOM`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
                     .setImage(response)
                     .setColor('#0fe694')
-                await interaction.reply({ embeds: [profilemsg] });
+                interaction.reply({ embeds: [profilemsg] });
             })
         }
 
