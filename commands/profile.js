@@ -24,7 +24,7 @@ module.exports = {
         var type = interaction.options.get('type').value
 
         if (type === 'boy') {
-            pic.boy().then((response) => {
+            pic.boy().then( async (response) => {
                 var profilemsg = new MessageEmbed()
                     .setTitle('Here is Your Request')
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`BOY`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
@@ -35,7 +35,7 @@ module.exports = {
         }
 
         if (type === 'girl') {
-            pic.girl().then((response) => {
+            pic.girl().then( async (response) => {
                 var profilemsg = new MessageEmbed()
                     .setTitle('Here is Your Request')
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`GIRL`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
@@ -46,7 +46,7 @@ module.exports = {
         }
 
         if (type === 'e_boy') {
-            pic.eboy().then((response) => {
+            pic.eboy().then( async (response) => {
                 var profilemsg = new MessageEmbed()
                     .setTitle('Here is Your Request')
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`E-BOY`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
@@ -57,7 +57,7 @@ module.exports = {
         }
 
         if (type === 'e_girl') {
-            pic.egirl().then((response) => {
+            pic.egirl().then( async (response) => {
                 var profilemsg = new MessageEmbed()
                     .setTitle('Here is Your Request')
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`E-GIRL`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
@@ -68,7 +68,7 @@ module.exports = {
         }
 
         if (type === 'couple') {
-            pic.couple().then((response) => {
+            pic.couple().then( async (response) => {
                 var profilemsg = new MessageEmbed()
                     .setTitle('Here is Your Request')
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`COUPLE`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
@@ -79,7 +79,7 @@ module.exports = {
         }
 
         if (type === 'landscape') {
-            pic.landscape().then((response) => {
+            pic.landscape().then( async (response) => {
                 var profilemsg = new MessageEmbed()
                     .setTitle('Here is Your Request')
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`LANDSCAPE`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
@@ -90,7 +90,7 @@ module.exports = {
         }
 
         if (type === 'anime') {
-            pic.anime().then((response) => {
+            pic.anime().then( async (response) => {
                 var profilemsg = new MessageEmbed()
                     .setTitle('Here is Your Request')
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`ANIME`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
@@ -101,7 +101,7 @@ module.exports = {
         }
 
         if (type === 'animal') {
-            pic.animal().then((response) => {
+            pic.animal().then( async (response) => {
                 var profilemsg = new MessageEmbed()
                     .setTitle('Here is Your Request')
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`ANIMAL`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
@@ -112,7 +112,7 @@ module.exports = {
         }
 
         if (type === 'random') {
-            pic.random().then((response) => {
+            pic.random().then( async (response) => {
                 var profilemsg = new MessageEmbed()
                     .setTitle('Here is Your Request')
                     .setDescription("**<:camera_emoji:914130630609080360> Profile Type:**\n<:space:874678195843125278><:right:874690882417360986>`RANDOM`\n*Wanna Find More ? Visit __[RP.JS](https://random-picjs.herokuapp.com/)__*")
