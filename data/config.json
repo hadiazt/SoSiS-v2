@@ -1,6 +1,6 @@
 {
     "clientId": "762378493929455617",
-    "token": "NzYyMzc4NDkzOTI5NDU1NjE3.X3oSTQ.NCpzch4dpOCfR2DpOFbc_63mK3E",
+    "token": "NzYyMzc4NDkzOTI5NDU1NjE3.X3oSTQ.9z6P25JkuTBgsO9K1iaVEzVYQng",
     "supportserver": "https://discord.gg/6vhPVYkNU9",
     "inv": "https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands",
     "PREFIX": "/",
@@ -20,5 +20,5 @@
             "type": "LISTENING"
         }
     },
-    "USAGE": 46650
+    "USAGE": 46652
 }
