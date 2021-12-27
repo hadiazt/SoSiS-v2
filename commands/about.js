@@ -16,7 +16,7 @@ module.exports = {
 
 **SoSiS Team:**
 <:space:874678195843125278><:right:874690882417360986> [零 hadi ZΞЯØ](https://github.com/hadiazt/)
-<:space:874678195843125278><:right:874690882417360986> [◤ vernix 𝐑𝗈мaη𝐜𝐞](https://github.com/Mani-Vernix)
+<:space:874678195843125278><:right:874690882417360986> [◣ vernix ZΞTA](https://github.com/Mani-Vernix)
 `)
 
         await interaction.reply({ embeds: [about] })
