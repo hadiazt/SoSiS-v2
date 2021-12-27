@@ -1,12 +1,13 @@
 const { SlashCommandBuilder } = require('@discordjs/builders')
+const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js')
+const { inv } = require('../data/config.json')
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('invite')
         .setDescription('SoSiS Invite Link'),
     async execute(interaction, client) {
-        const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js')
-        const { inv } = require('../data/config.json')
+
         const invmsg = new MessageEmbed()
             .setTitle('Click The Button To Add SoSiS In To Your Server')
             .setColor('#0fe694')
@@ -19,6 +20,6 @@ module.exports = {
                 .setURL(inv),
         )
 
-        return interaction.reply({ embeds: [invmsg], components: [linkinv] })
+        await interaction.reply({ embeds: [invmsg], components: [linkinv] })
     }
 }

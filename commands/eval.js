@@ -1,4 +1,10 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
+const { OWNER } = require('../data/config.json');
+
+const { Database } = require('beta.db')
+const afkdb = new Database('./data/afk.json')
+const lovedb = new Database("./data/love.json")
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -10,20 +16,15 @@ module.exports = {
                 .setRequired(true)
         ),
     async execute(interaction, client) {
-        const { MessageEmbed } = require('discord.js');
-        const { OWNER } = require('../data/config.json');
 
-        const { Database } = require('beta.db')
-        const afkdb = new Database('./data/afk.json')
-        const lovedb = new Database("./data/love.json")
         const bot = client;
-        
+    
         var CODE = interaction.options.get('input').value;
 
         const { inspect } = require('util');
 
 
-        if (interaction.user.id !== OWNER) return interaction.reply('Opps !!! You Are Not The Bot Owner');
+        if (interaction.user.id !== OWNER) await interaction.reply('Opps !!! You Are Not The Bot Owner');
         let evaled;
         try {
             evaled = await eval(CODE);

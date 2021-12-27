@@ -1,4 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
+const gif = require('nekos.life');
+const nekos = new gif();
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -23,9 +26,7 @@ module.exports = {
                 .addChoice('BLOWJOB', 'blowjob')),
 
     async execute(interaction) {
-        const { MessageEmbed } = require('discord.js');
-        const gif = require('nekos.life');
-        const nekos = new gif();
+
 
         var type = interaction.options.get('type').value
 
@@ -215,7 +216,7 @@ module.exports = {
 
 
         } else {
-            return interaction.reply('This Command Works Only In **NSFW** Channels');
+            await interaction.reply('This Command Works Only In **NSFW** Channels');
         }
 
     },

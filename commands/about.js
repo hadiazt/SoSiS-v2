@@ -1,11 +1,11 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('about')
         .setDescription('Information About Us'),
     async execute(interaction, client) {
-        const { MessageEmbed } = require('discord.js');
 
         var about = new MessageEmbed()
             .setTitle('<:sosis_2:914467249157439488> About SoSiS:')
@@ -19,6 +19,6 @@ module.exports = {
 <:space:874678195843125278><:right:874690882417360986> [◤ vernix 𝐑𝗈мaη𝐜𝐞](https://github.com/Mani-Vernix)
 `)
 
-        interaction.reply({ embeds: [about] })
+        await interaction.reply({ embeds: [about] })
     },
 };

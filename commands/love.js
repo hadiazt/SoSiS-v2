@@ -1,4 +1,9 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageAttachment, MessageEmbed } = require('discord.js');
+const Canvas = require('canvas');
+Canvas.registerFont('./data/font/OpenSans-ExtraBoldItalic.ttf', { family: 'OpenSans-Regular' })
+const { Database } = require('beta.db')
+const lovedb = new Database("./data/love.json")
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -10,17 +15,13 @@ module.exports = {
                 .setRequired(true)),
 
     async execute(interaction, client) {
-        const { MessageAttachment, MessageEmbed } = require('discord.js');
-        const Canvas = require('canvas');
-        Canvas.registerFont('./data/font/OpenSans-ExtraBoldItalic.ttf', { family: 'OpenSans-Regular' })
-        const { Database } = require('beta.db')
-        const lovedb = new Database("./data/love.json")
+
 
 
         var user = interaction.options.getUser('user')
 
-        if (user.bot === true) return interaction.reply('Bots Are Not Allowed');
-        if (user.id === interaction.user.id) return interaction.reply('Please Mention Some One Else');
+        if (user.bot === true) await interaction.reply('Bots Are Not Allowed');
+        if (user.id === interaction.user.id) await interaction.reply('Please Mention Some One Else');
 
 
 

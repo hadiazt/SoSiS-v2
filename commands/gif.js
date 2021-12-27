@@ -1,4 +1,8 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
+const rga = require("random-gif-api")
+const gif = require('nekos.life');
+const nekos = new gif();
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -26,17 +30,13 @@ module.exports = {
         ),
 
     async execute(interaction, client) {
-        const { MessageEmbed } = require('discord.js');
-        const rga = require("random-gif-api")
-        const gif = require('nekos.life');
-        const nekos = new gif();
 
         var type = interaction.options.get('type').value
 
         var user = interaction.options.getUser('user')
 
-        if (user.bot === true) return interaction.reply('Bots Are Not Allowed');
-        if (user.id === interaction.user.id) return interaction.reply('Please Mention Some One Else');
+        if (user.bot === true) await interaction.reply('Bots Are Not Allowed');
+        if (user.id === interaction.user.id) await interaction.reply('Please Mention Some One Else');
 
         if (type === 'slap') {
             async function slapgwork() {

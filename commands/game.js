@@ -1,4 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
+const { chistan, TRUTH, DARE } = require('../data/game.json')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -12,8 +14,7 @@ module.exports = {
                 .addChoice('TRUTH', 'truth')
                 .addChoice('DARE', 'dare')),
     async execute(interaction) {
-        const { MessageEmbed } = require('discord.js');
-        const { chistan, TRUTH, DARE } = require('../data/game.json')
+
 
         var type = interaction.options.get('type').value
 
@@ -24,7 +25,7 @@ module.exports = {
                 .setTitle(' 🤔 ' + soalq.soal + ' 🤔 ')
                 .setColor('#0fe694')
                 .setDescription('👇 Click To See Awnser 👇 \n**||' + soalq.javab + '||**')
-            return interaction.reply({ embeds: [embed] })
+            await interaction.reply({ embeds: [embed] })
         }
 
         if (type === 'truth') {
@@ -32,7 +33,7 @@ module.exports = {
             let embed = new MessageEmbed()
                 .setTitle(' 🟢 ' + truth + ' 🟢 ')
                 .setColor('#0fe694')
-            return interaction.reply({ embeds: [embed] })
+            await interaction.reply({ embeds: [embed] })
         }
 
         if (type === 'dare') {
@@ -40,7 +41,7 @@ module.exports = {
             let embed = new MessageEmbed()
                 .setTitle(' 🔴 ' + dare + ' 🔴 ')
                 .setColor('#0fe694')
-            return interaction.reply({ embeds: [embed] })
+            await interaction.reply({ embeds: [embed] })
         }
 
     },

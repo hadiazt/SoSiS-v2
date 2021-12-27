@@ -1,4 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
+const effect = require('effects-image.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -34,8 +36,7 @@ module.exports = {
         ),
 
     async execute(interaction) {
-        const { MessageEmbed } = require('discord.js');
-        const effect = require('effects-image.js');
+
 
         var type = interaction.options.get('type').value
 

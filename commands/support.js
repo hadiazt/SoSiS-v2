@@ -1,12 +1,13 @@
 const { SlashCommandBuilder } = require('@discordjs/builders')
+const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js')
+const { supportserver } = require('../data/config.json')
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('support')
         .setDescription('Bot Support Server'),
     async execute(interaction, client) {
-        const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js')
-        const { supportserver } = require('../data/config.json')
+
         const supportmsg = new MessageEmbed()
             .setTitle('Click The Button To Join Support Server')
             .setThumbnail(client.user.displayAvatarURL({ size: 2048 }))
@@ -19,6 +20,6 @@ module.exports = {
                 .setURL(supportserver),
         )
 
-        return interaction.reply({ embeds: [supportmsg], components: [link] })
+        await interaction.reply({ embeds: [supportmsg], components: [link] })
     }
 }

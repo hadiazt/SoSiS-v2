@@ -1,12 +1,13 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js')
+const { PREFIX } = require('../data/config.json')
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('help')
         .setDescription('SoSiS Help Menu'),
     async execute(interaction, client) {
-        const { MessageEmbed } = require('discord.js')
-        const { PREFIX } = require('../data/config.json')
+
         const helpmsg = new MessageEmbed()
             .setTitle('SoSiS`s Bot Help Panel :')
             .setColor('#0fe694')
@@ -54,6 +55,6 @@ __Options :__
 <:space:874678195843125278><:right:874690882417360986>`+ '`' + '/stats' + '`' + ` 
 `)
 
-        return interaction.reply({ embeds: [helpmsg] });
+        await interaction.reply({ embeds: [helpmsg] });
     },
 };

@@ -1,4 +1,8 @@
 const { SlashCommandBuilder } = require('@discordjs/builders')
+const { MessageAttachment } = require('discord.js')
+const ScrapeYt = require("scrape-yt");
+const YTDL = require("discord-ytdl-core");
+const { createWriteStream } = require("fs");
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -10,10 +14,7 @@ module.exports = {
                 .setRequired(true)
         ),
     async execute(interaction) {
-        const { MessageAttachment } = require('discord.js')
-        const ScrapeYt = require("scrape-yt");
-        const YTDL = require("discord-ytdl-core");
-        const { createWriteStream } = require("fs");
+
 
         let videolink = interaction.options.get('link').value
 
@@ -46,7 +47,7 @@ module.exports = {
         //         return interaction.editReply('<a:cross:853953928269660180> | 404 Not Found\nError: ' + e)
         //     }
         // } else {
-        //     return interaction.reply('<a:cross:853953928269660180> | Please Enter A YT Video Link');
+        //     await interaction.reply('<a:cross:853953928269660180> | Please Enter A YT Video Link');
         // }
         
     }

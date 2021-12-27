@@ -1,4 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders')
+const { MessageEmbed } = require('discord.js')
+const { Database } = require('beta.db')
+const db = new Database('./data/config.json')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -6,9 +9,7 @@ module.exports = {
         .setDescription('Bot Stats'),
     async execute(interaction, client) {
 
-        const { MessageEmbed } = require('discord.js')
-        const { Database } = require('beta.db')
-        const db = new Database('./data/config.json')
+
 
         var MemberCount = 0;
         client.guilds.cache.forEach(Member => {
@@ -34,6 +35,6 @@ module.exports = {
 <:space:874678195843125278><:triangularflag_emoji:914500272779296789>*Version :  `+ '`' + db.get('VER') + '`' + `*
 `)
 
-        return interaction.reply({ embeds: [supportmsg] })
+        await interaction.reply({ embeds: [supportmsg] })
     }
 }
