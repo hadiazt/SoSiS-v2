@@ -10,7 +10,7 @@
     "@discordjs/rest": "^0.1.0-canary.0",
     "chalk": "^4.1.2",
     "discord-ytdl-core": "^5.0.4",
-    "discord.js": "^13.3.1",
+    "discord.js": "^13.4.0",
     "ffmpeg-static": "^4.4.0",
     "scrape-yt": "^1.4.8",
     "ytdl-core": "^4.9.1",
