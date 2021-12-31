@@ -20,6 +20,6 @@ module.exports = {
                 .setURL(supportserver),
         )
 
-        interaction.reply({ embeds: [supportmsg], components: [link] })
+        return interaction.reply({ embeds: [supportmsg], components: [link] })
     }
 }

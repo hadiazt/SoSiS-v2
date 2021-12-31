@@ -12,6 +12,6 @@ module.exports = {
             .setTitle(`Your Attractiveness Percentage ${rating}/100`)
             .setColor('#0fe694')
 
-        interaction.reply({ embeds: [Attractiveness] });
+        return interaction.reply({ embeds: [Attractiveness] });
     },
 };

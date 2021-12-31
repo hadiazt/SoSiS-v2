@@ -24,7 +24,7 @@ module.exports = {
         const { inspect } = require('util');
 
 
-        if (interaction.user.id !== OWNER) interaction.reply('Opps !!! You Are Not The Bot Owner');
+        if (interaction.user.id !== OWNER) return interaction.reply('Opps !!! You Are Not The Bot Owner');
         let evaled;
         try {
             evaled = await eval(CODE);
@@ -32,14 +32,14 @@ module.exports = {
                 .setTitle('Eval Result : ')
                 .setDescription('INPUT :\n```js\n' + CODE + '\n```\nOUTPUT :\n```js\n' + inspect(evaled) + '\n```')
                 .setColor('#0fe694')
-            interaction.reply({ embeds: [evalend] }).catch(e => { interaction.reply('```js\n' + e + '\n```'); });
+            return interaction.reply({ embeds: [evalend] }).catch(e => { return interaction.reply('```js\n' + e + '\n```'); });
         }
         catch (error) {
             let evalerr = new MessageEmbed()
                 .setTitle('Thre Was An Error : ')
                 .setDescription('```js\n' + error + '```')
                 .setColor("#FF6347")
-            interaction.reply({ embeds: [evalerr] })
+            return interaction.reply({ embeds: [evalerr] })
         }
 
 

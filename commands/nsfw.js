@@ -41,7 +41,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`HENTAI`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 hentai()
             }
@@ -55,7 +55,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`NEKO`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 neko()
             }
@@ -69,7 +69,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`LESBIAN`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 lesbian()
             }
@@ -83,7 +83,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`BOOBS`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 cumsluts()
             }
@@ -97,7 +97,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`ANAL`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 boobs()
             }
@@ -111,7 +111,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`TITS`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 anal()
             }
@@ -125,7 +125,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`TRAP`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 tits()
             }
@@ -139,7 +139,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`GIRL SOLO`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 trap()
             }
@@ -153,7 +153,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`FEET`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 girlSolo()
             }
@@ -167,7 +167,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`EROFEET`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 feet()
             }
@@ -181,7 +181,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`FEETGIF`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 eroFeet()
             }
@@ -195,7 +195,7 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`HENTAI`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 feetGif()
             }
@@ -209,14 +209,14 @@ module.exports = {
                         .setDescription("**<:nooneundereighteen_emoji:914443920547643413> Nsfw Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLOWJOB`")
                         .setColor('#0fe694')
                         .setImage(x.url)
-                    interaction.reply({ embeds: [nsfwmsg] });
+                    return interaction.reply({ embeds: [nsfwmsg] });
                 }
                 blowJob()
             }
 
 
         } else {
-            interaction.reply('This Command Works Only In **NSFW** Channels');
+            return interaction.reply('This Command Works Only In **NSFW** Channels');
         }
 
     },

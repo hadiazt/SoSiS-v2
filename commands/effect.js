@@ -48,7 +48,7 @@ module.exports = {
                 .setImage(user)
                 .setLevel(2)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 2`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -60,7 +60,7 @@ module.exports = {
                 .setImage(user)
                 .setLevel(3)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 3`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -72,7 +72,7 @@ module.exports = {
                 .setImage(user)
                 .setLevel(4)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 4`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -84,7 +84,7 @@ module.exports = {
                 .setImage(user)
                 .setLevel(5)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BLUR 5`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -96,7 +96,7 @@ module.exports = {
                 .setImage(user)
                 .setBrightness(3)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BRIGHTNESS 3`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -108,7 +108,7 @@ module.exports = {
                 .setImage(user)
                 .setBrightness(4)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BRIGHTNESS 4`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -120,7 +120,7 @@ module.exports = {
                 .setImage(user)
                 .setBrightness(5)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BRIGHTNESS 5`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -132,7 +132,7 @@ module.exports = {
                 .setImage(user)
                 .setBrightness(6)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`BRIGHTNESS 6`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -143,7 +143,7 @@ module.exports = {
             new effect.Circle()
                 .setImage(user)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`CIRCLE`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -154,7 +154,7 @@ module.exports = {
             new effect.Fisheye()
                 .setImage(user)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`FISHEYE`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -165,7 +165,7 @@ module.exports = {
             new effect.Flip()
                 .setImage(user)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`FLIP`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -176,7 +176,7 @@ module.exports = {
             new effect.Greyscale()
                 .setImage(user)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`GREYSCALE`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -187,7 +187,7 @@ module.exports = {
             new effect.Invert()
                 .setImage(user)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`INVERT`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -198,7 +198,7 @@ module.exports = {
             new effect.Normalize()
                 .setImage(user)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`NORMALIZE`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -210,7 +210,7 @@ module.exports = {
                 .setImage(user)
                 .setRotate(30)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`ROTATE 30`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -222,7 +222,7 @@ module.exports = {
                 .setImage(user)
                 .setRotate(60)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`ROTATE 60`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -234,7 +234,7 @@ module.exports = {
                 .setImage(user)
                 .setRotate(90)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`ROTATE 90`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]
@@ -246,7 +246,7 @@ module.exports = {
                 .setImage(user)
                 .setRotate(180)
                 .build().then(res => {
-                    interaction.reply({
+                    return interaction.reply({
                         content: '**Here is Your Request : **\n**:crayon: Effect Type:**\n<:space:874678195843125278><:right:874690882417360986>`ROTATE 180`\n*Wanna Find More ? Visit __[EFFETCS-IMAGE.JS](https://www.npmjs.com/package/effects-image.js)__*', files: [
                             { attachment: res }
                         ]

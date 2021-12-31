@@ -25,7 +25,7 @@ module.exports = {
                 .setTitle(' 🤔 ' + soalq.soal + ' 🤔 ')
                 .setColor('#0fe694')
                 .setDescription('👇 Click To See Awnser 👇 \n**||' + soalq.javab + '||**')
-            interaction.reply({ embeds: [embed] })
+            return interaction.reply({ embeds: [embed] })
         }
 
         if (type === 'truth') {
@@ -33,7 +33,7 @@ module.exports = {
             let embed = new MessageEmbed()
                 .setTitle(' 🟢 ' + truth + ' 🟢 ')
                 .setColor('#0fe694')
-            interaction.reply({ embeds: [embed] })
+            return interaction.reply({ embeds: [embed] })
         }
 
         if (type === 'dare') {
@@ -41,7 +41,7 @@ module.exports = {
             let embed = new MessageEmbed()
                 .setTitle(' 🔴 ' + dare + ' 🔴 ')
                 .setColor('#0fe694')
-            interaction.reply({ embeds: [embed] })
+            return interaction.reply({ embeds: [embed] })
         }
 
     },

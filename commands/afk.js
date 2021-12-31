@@ -18,7 +18,7 @@ module.exports = {
     afkdb.set(interaction.user.id + '.afk', 'true');
     afkdb.set(interaction.user.id + '.messageafk', `${r}`);
 
-    interaction.reply(`You Are Now AFK In DB\nReason : ${r}`);
+    return interaction.reply(`You Are Now AFK In DB\nReason : ${r}`);
 
   },
 };

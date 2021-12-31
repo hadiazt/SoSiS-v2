@@ -14,6 +14,6 @@ module.exports = {
             .setThumbnail(simp[Math.floor(Math.random() * simp.length)])
             .setColor('#0fe694')
 
-        interaction.reply({ embeds: [simpnes] });
+        return interaction.reply({ embeds: [simpnes] });
     },
 };

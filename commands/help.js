@@ -55,6 +55,6 @@ __Options :__
 <:space:874678195843125278><:right:874690882417360986>`+ '`' + '/stats' + '`' + ` 
 `)
 
-        interaction.reply({ embeds: [helpmsg] });
+        return interaction.reply({ embeds: [helpmsg] });
     },
 };

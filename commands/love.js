@@ -20,8 +20,8 @@ module.exports = {
 
         var user = interaction.options.getUser('user')
 
-        if (user.bot === true) interaction.reply('Bots Are Not Allowed');
-        if (user.id === interaction.user.id) interaction.reply('Please Mention Some One Else');
+        if (user.bot === true) return interaction.reply('Bots Are Not Allowed');
+        if (user.id === interaction.user.id) return interaction.reply('Please Mention Some One Else');
 
 
 
@@ -56,7 +56,7 @@ module.exports = {
 
             const loveattachment = new MessageAttachment(canvas.toBuffer(), 'love.png');
 
-            interaction.reply({ content: `<@${interaction.user.id}> Loves <@${user.id}> ${lovenum}%`, files: [loveattachment] })
+            return interaction.reply({ content: `<@${interaction.user.id}> Loves <@${user.id}> ${lovenum}%`, files: [loveattachment] })
 
         } else {
 
@@ -90,7 +90,7 @@ module.exports = {
 
             const loveattachment = new MessageAttachment(canvas.toBuffer(), 'love.png');
 
-            interaction.reply({ content: `<@${interaction.user.id}> Loves <@${user.id}> ${lovegen}%`, files: [loveattachment] })
+            return interaction.reply({ content: `<@${interaction.user.id}> Loves <@${user.id}> ${lovegen}%`, files: [loveattachment] })
 
         }
 

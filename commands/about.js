@@ -19,6 +19,6 @@ module.exports = {
 <:space:874678195843125278><:right:874690882417360986> [◣ vernix ZΞTA](https://github.com/Mani-Vernix)
 `)
 
-        await interaction.reply({ embeds: [about] })
+        return interaction.reply({ embeds: [about] })
     },
 };

@@ -35,8 +35,8 @@ module.exports = {
 
         var user = interaction.options.getUser('user')
 
-        if (user.bot === true) interaction.reply('Bots Are Not Allowed');
-        if (user.id === interaction.user.id) interaction.reply('Please Mention Some One Else');
+        if (user.bot === true) return interaction.reply('Bots Are Not Allowed');
+        if (user.id === interaction.user.id) return interaction.reply('Please Mention Some One Else');
 
         if (type === 'slap') {
             async function slapgwork() {
@@ -45,7 +45,7 @@ module.exports = {
                     .setTitle(`${interaction.user.tag} Slapped ${user.tag}`)
                     .setColor('#0fe694')
                     .setImage(slapg.url)
-                interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed] });
             }
             slapgwork();
         }
@@ -57,7 +57,7 @@ module.exports = {
                     .setTitle(`${interaction.user.tag} Kissed ${user.tag}`)
                     .setColor('#0fe694')
                     .setImage(slapg.url)
-                interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed] });
             }
             kisswork();
         }
@@ -68,7 +68,7 @@ module.exports = {
                     .setTitle(`${interaction.user.tag} Bitted ${user.tag}`)
                     .setColor('#0fe694')
                     .setImage(data)
-                interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed] });
             })
         }
 
@@ -78,7 +78,7 @@ module.exports = {
                     .setTitle(`${interaction.user.tag} Killed ${user.tag}`)
                     .setColor('#0fe694')
                     .setImage(data)
-                interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed] });
             })
         }
 
@@ -88,7 +88,7 @@ module.exports = {
                     .setTitle(`${interaction.user.tag} Tickled ${user.tag}`)
                     .setColor('#0fe694')
                     .setImage(data)
-                interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed] });
             })
         }
 
@@ -98,7 +98,7 @@ module.exports = {
                     .setTitle(`${interaction.user.tag} Licked ${user.tag}`)
                     .setColor('#0fe694')
                     .setImage(data)
-                interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed] });
             })
         }
 
@@ -108,7 +108,7 @@ module.exports = {
                     .setTitle(`${interaction.user.tag} Punched ${user.tag}`)
                     .setColor('#0fe694')
                     .setImage(data)
-                interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed] });
             })
         }
 
@@ -118,7 +118,7 @@ module.exports = {
                     .setTitle(`${interaction.user.tag} Patted ${user.tag}`)
                     .setColor('#0fe694')
                     .setImage(data)
-                interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed] });
             })
         }
 
@@ -128,7 +128,7 @@ module.exports = {
                     .setTitle(`${interaction.user.tag} Huged ${user.tag}`)
                     .setColor('#0fe694')
                     .setImage(data)
-                interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed] });
             })
         }
 
@@ -138,7 +138,7 @@ module.exports = {
                     .setTitle(`${interaction.user.tag} Spanked ${user.tag}`)
                     .setColor('#0fe694')
                     .setImage(data)
-                interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed] });
             })
         }
 

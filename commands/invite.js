@@ -20,6 +20,6 @@ module.exports = {
                 .setURL(inv),
         )
 
-        interaction.reply({ embeds: [invmsg], components: [linkinv] })
+        return interaction.reply({ embeds: [invmsg], components: [linkinv] })
     }
 }

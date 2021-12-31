@@ -18,7 +18,7 @@ module.exports = {
 
         let videolink = interaction.options.get('link').value
 
-        interaction.reply('UPDATING . . .')
+        return interaction.reply('UPDATING . . .')
 
         // if (videolink.startsWith('https')) {
         //     let infos;
@@ -27,13 +27,13 @@ module.exports = {
         //     try {
         //         stream = YTDL(videolink, { encoderArgs: ['-af', 'dynaudnorm=f=200'], fmt: 'mp3', opusEncoded: false });
         //         infos = await ScrapeYt.search(videolink);
-        //         interaction.reply('Scraping . . .')
+        //         return interaction.reply('Scraping . . .')
         //     } catch (e) {
         //         return interaction.editReply('<a:cross:853953928269660180> | 404 Not Found\nError: ' + e)
         //     }
 
         //     try {
-        //         interaction.reply('<a:load:878160361302401034> | Downloading Video');
+        //         return interaction.reply('<a:load:878160361302401034> | Downloading Video');
         //         stream.pipe(createWriteStream(`./download/${infos[0].id}.mp3`)).on('finish', () => {
         //             try {
         //                 // message.inlineReply(`<a:tick:853953922426470400> | آهنگ درخواستی شما ${infos[0].title} `, new Discord.MessageAttachment(__dirname + `/download/${infos[0].id}.mp3`, `${infos[0].id}.mp3`))
@@ -47,7 +47,7 @@ module.exports = {
         //         return interaction.editReply('<a:cross:853953928269660180> | 404 Not Found\nError: ' + e)
         //     }
         // } else {
-        //     interaction.reply('<a:cross:853953928269660180> | Please Enter A YT Video Link');
+        //     return interaction.reply('<a:cross:853953928269660180> | Please Enter A YT Video Link');
         // }
         
     }
