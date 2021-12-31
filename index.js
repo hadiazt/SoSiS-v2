@@ -42,7 +42,7 @@ console.log(chalk.red('--------------------------------------------'));
 client.on('guildCreate', async guild => {
 	let JoinEmbed = new MessageEmbed()
 		.setDescription('**<:space:874678195843125278><:right:874690882417360986> A New Guild Has Been Submited**')
-		.setAuthor(guild.name, guild.iconURL({ dynamic: true }))
+		.setAuthor({ name: guild.name, iconURL: guild.iconURL({ dynamic: true }) })
 		.setColor('#0fe694')
 	client.channels.cache.get(config.BOT_LOG).send({ embeds: [JoinEmbed] });
 });
@@ -50,7 +50,7 @@ client.on('guildCreate', async guild => {
 client.on('guildDelete', async guild => {
 	let LeftEmbed = new MessageEmbed()
 		.setDescription('**<:space:874678195843125278><:right:874690882417360986> A Guild Has Been Removed **')
-		.setAuthor(guild.name, guild.iconURL({ dynamic: true }))
+		.setAuthor({ name: guild.name, iconURL: guild.iconURL({ dynamic: true }) })
 		.setColor('#ff0000')
 	client.channels.cache.get(config.BOT_LOG).send({ embeds: [LeftEmbed] });
 });
@@ -68,7 +68,8 @@ client.on('interactionCreate', async interaction => {
 		client.channels.cache.get(config.ACTION_LOG).send('```\n' + `${interaction.commandName} Triggerd In ${interaction.guild.name} | ${interaction.channel.name} By ${interaction.user.tag}` + '\n```')
 	} catch (error) {
 		console.error(error);
-		interaction.reply({ content: `There was an error while executing this command!\nAsk Developers In : ${config.supportserver}`, ephemeral: true });
+        client.channels.cache.get(CONFIG.ERROR).send('```\n' + error + '\n```')
+		return interaction.reply({ content: `There was an error while executing this command!\nAsk Developers In : ${config.supportserver}`, ephemeral: true });
 	}
 });
 
