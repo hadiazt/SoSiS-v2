@@ -74,3 +74,19 @@ client.on('interactionCreate', async interaction => {
 });
 
 // --------------------------------------------
+
+process.on('unhandledRejection', err => {
+
+    var errembed = new MessageEmbed()
+        .setTitle(':warning: New Error')
+        .setColor('YELLOW')
+        .addFields(
+            { name: ':pushpin: Type: ', value: `\`\`\`${err.name + "".split("", 150).join("") || "N/A"}\`\`\`` },
+            {
+                name: ':page_with_curl: Reason: ',
+                value: `\`\`\`${err.message + "".split("", 150).join("") || "N/A"}\`\`\``
+            },
+        )
+        .setTimestamp()
+    client.channels.cache.get(config.ERROR).send({ embeds: [errembed] })
+});
