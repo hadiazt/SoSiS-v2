@@ -4,7 +4,7 @@
     "supportserver": "https://discord.gg/6vhPVYkNU9",
     "inv": "https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands",
     "PREFIX": "/",
-    "VER": "2.0.0",
+    "VER": "2.1.0",
     "OWNER": "490519932292038659",
     "BOT_LOG": "879420520351805511",
     "ERROR": "879427034558922802",
@@ -20,5 +20,5 @@
             "type": "LISTENING"
         }
     },
-    "USAGE": 46841
+    "USAGE": 47093
 }
