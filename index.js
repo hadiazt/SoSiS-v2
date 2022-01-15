@@ -68,7 +68,7 @@ client.on('interactionCreate', async interaction => {
 		client.channels.cache.get(config.ACTION_LOG).send('```\n' + `${interaction.commandName} Triggerd In ${interaction.guild.name} | ${interaction.channel.name} By ${interaction.user.tag}` + '\n```')
 	} catch (error) {
 		console.error(error);
-        client.channels.cache.get(CONFIG.ERROR).send('```\n' + error + '\n```')
+        client.channels.cache.get(config.ERROR).send('```\n' + error + '\n```')
 		return interaction.reply({ content: `There was an error while executing this command!\nAsk Developers In : ${config.supportserver}`, ephemeral: true });
 	}
 });
