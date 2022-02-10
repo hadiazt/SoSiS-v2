@@ -2,7 +2,7 @@
 # SoSiS-V2
 
 
-<center><img src="https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=1024" alt="drawing" width="200" border-radius="50px"/></center>
+<p align="center"><img src="https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=1024" alt="drawing" width="200" border-radius="50px"/></p>
 
 </br>
 </br>
