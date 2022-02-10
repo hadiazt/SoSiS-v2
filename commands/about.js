@@ -7,10 +7,10 @@ module.exports = {
         .setDescription('Information About Us'),
 
     async execute(interaction, client) {
-        
+
         const SRC = new MessageActionRow().addComponents(
             new MessageButton()
-                .setLabel('SUPPORT')
+                .setLabel('SOURCE')
                 .setStyle('LINK')
                 .setURL(SRC),
         )
