@@ -1,8 +1,9 @@
 {
     "clientId": "762378493929455617",
-    "token": "NzYyMzc4NDkzOTI5NDU1NjE3.X3oSTQ.TzcakxrLQIddL9woo_yUWMnm-BU",
+    "token": "YOUR_BOT_TOKEN",
     "supportserver": "https://discord.gg/6vhPVYkNU9",
     "inv": "https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands",
+    "SRC":"https://github.com/hadiazt/SoSiS-v2",
     "PREFIX": "/",
     "VER": "2.1.0",
     "OWNER": "490519932292038659",
