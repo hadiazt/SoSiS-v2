@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 const { SRC } = require('../data/config.json')
 module.exports = {
     data: new SlashCommandBuilder()
@@ -8,7 +8,7 @@ module.exports = {
 
     async execute(interaction, client) {
 
-        const SRC = new MessageActionRow().addComponents(
+        const SRCBTN = new MessageActionRow().addComponents(
             new MessageButton()
                 .setLabel('SOURCE')
                 .setStyle('LINK')
@@ -26,9 +26,9 @@ module.exports = {
 <:space:874678195843125278><:right:874690882417360986> [零 hadi ZΞЯØ](https://github.com/hadiazt/)
 <:space:874678195843125278><:right:874690882417360986> [VГΠIЖ#9993](https://github.com/Mani-Vernix)
 
-Open Source LICENSE : [MIT] (https://github.com/hadiazt/SoSiS-v2/blob/main/LICENSE)
+Open Source LICENSE : [MIT](https://github.com/hadiazt/SoSiS-v2/blob/main/LICENSE)
 `)
 
-        return interaction.reply({ embeds: [about], components: [SRC] })
+        return interaction.reply({ embeds: [about], components: [SRCBTN] })
     },
 };
