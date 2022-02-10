@@ -63,9 +63,14 @@ client.on('interactionCreate', async interaction => {
 	if (!command) return;
 
 	try {
-		await command.execute(interaction, client);
-		db.add('USAGE', 1)
-		client.channels.cache.get(config.ACTION_LOG).send('```\n' + `${interaction.commandName} Triggerd In ${interaction.guild.name} | ${interaction.channel.name} By ${interaction.user.tag}` + '\n```')
+		if (interaction.guild) {
+			await command.execute(interaction, client);
+			db.add('USAGE', 1)	
+			client.channels.cache.get(config.ACTION_LOG).send('```\n' + `${interaction.commandName} Triggerd In ${interaction.guild.name} | ${interaction.channel.name} By ${interaction.user.tag}` + '\n```')
+		} else {
+			return interaction.reply({ content: 'Interactions Only Works In Servers', ephemeral: true });
+		}
+
 	} catch (error) {
 		console.error(error);
         client.channels.cache.get(config.ERROR).send('```\n' + error + '\n```')
