@@ -49,7 +49,7 @@ And Have A Good Time In Discord.
 }
 
 ```
-
+Do Not Change `Presence` / `SRC` / `PREFIX` / `VER`
 </br>
 
 <p align="center">
