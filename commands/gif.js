@@ -7,7 +7,7 @@ const nekos = new gif();
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('gif')
-        .setDescription('Starts An Gif')
+        .setDescription('Sends A Gif')
         .addStringOption(option =>
             option.setName('type')
                 .setDescription('Type Of Gif')
