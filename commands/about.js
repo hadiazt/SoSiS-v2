@@ -23,8 +23,8 @@ module.exports = {
 *and have a good time In Discord.*
 
 **SoSiS Team:**
-<:space:874678195843125278><:right:874690882417360986> [零 hadi ZΞЯØ](https://github.com/hadiazt/)
-<:space:874678195843125278><:right:874690882417360986> [VГΠIЖ#9993](https://github.com/Mani-Vernix)
+<:space:874678195843125278><:right:874690882417360986> [Hadi.Az](https://github.com/hadiazt/)
+<:space:874678195843125278><:right:874690882417360986> [im-vernix](https://github.com/Mani-Vernix)
 
 Open Source LICENSE : [MIT](https://github.com/hadiazt/SoSiS-v2/blob/main/LICENSE)
 `)
