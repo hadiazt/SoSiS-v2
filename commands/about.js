@@ -27,6 +27,9 @@ module.exports = {
 <:space:874678195843125278><:right:874690882417360986> [im-vernix](https://github.com/Mani-Vernix)
 
 Open Source LICENSE : [MIT](https://github.com/hadiazt/SoSiS-v2/blob/main/LICENSE)
+
+‌By using the bot you are accepting our [Terms of Service](https://github.com/hadiazt/SoSiS-v2/blob/main/extra/Terms%20of%20Service.md) and [Privacy Policy](https://github.com/hadiazt/SoSiS-v2/blob/main/extra/Privacy%20Policy.md)
+
 `)
 
         return interaction.reply({ embeds: [about], components: [SRCBTN] })
