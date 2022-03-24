@@ -7,9 +7,6 @@ By inviting the bot and using its features you are agreeing to the below-mention
 
 You acknowledge that you have the privilege to use the bot freely on any Discord Server you share with it, that you can invite it to any Server that you have "Manage Server" rights for and that this privilege might get revoked for you, if you're subject of breaking the Terms Of Service of this bot, or the [Terms of Service](https://discord.com/terms),  [Privacy Policy](https://discord.com/privacy)  and/or  [Community Guidelines](https://discord.com/guidelines)  of  [Discord Inc](https://discord.com/).
 
-Through inviting the bot may it collect specific data.
-The intended usage of this data is for core functionalities of the bot such as command handling, guild-specific settings and etc.
-
 ### Intended Age
 
 The bot may not be used by individuals under the minimal age described in Discord's Terms of Service.  
