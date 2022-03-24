@@ -28,7 +28,7 @@ module.exports = {
 
 Open Source LICENSE : [MIT](https://github.com/hadiazt/SoSiS-v2/blob/main/LICENSE)
 
-‌By using the bot you are accepting our [Terms of Service]() and [Privacy Policy]()
+‌By using the bot you are accepting our [Terms of Service](https://github.com/hadiazt/SoSiS-v2/blob/main/extra/Terms%20of%20Service.md) and [Privacy Policy](https://github.com/hadiazt/SoSiS-v2/blob/main/extra/Privacy%20Policy.md)
 
 `)
 
