@@ -65,7 +65,7 @@ client.on('interactionCreate', async interaction => {
 	try {
 		if (interaction.guild) {
 			await command.execute(interaction, client);
-			db.add('USAGE', 1)	
+			db.add('USAGE', 1)
 			client.channels.cache.get(config.ACTION_LOG).send('```\n' + `${interaction.commandName} Triggerd In ${interaction.guild.name} | ${interaction.channel.name} By ${interaction.user.tag}` + '\n```')
 		} else {
 			return interaction.reply({ content: 'Interactions Only Works In Servers', ephemeral: true });
@@ -73,7 +73,7 @@ client.on('interactionCreate', async interaction => {
 
 	} catch (error) {
 		console.error(error);
-        client.channels.cache.get(config.ERROR).send('```\n' + error + '\n```')
+		client.channels.cache.get(config.ERROR).send('```\n' + error + '\n```')
 		return interaction.reply({ content: `There was an error while executing this command!\nAsk Developers In : ${config.supportserver}`, ephemeral: true });
 	}
 });
@@ -81,17 +81,17 @@ client.on('interactionCreate', async interaction => {
 // --------------------------------------------
 
 process.on('unhandledRejection', err => {
-
-    var errembed = new MessageEmbed()
-        .setTitle(':warning: New Error')
-        .setColor('YELLOW')
-        .addFields(
-            { name: ':pushpin: Type: ', value: `\`\`\`${err.name + "".split("", 150).join("") || "N/A"}\`\`\`` },
-            {
-                name: ':page_with_curl: Reason: ',
-                value: `\`\`\`${err.message + "".split("", 150).join("") || "N/A"}\`\`\``
-            },
-        )
-        .setTimestamp()
-    client.channels.cache.get(config.ERROR).send({ embeds: [errembed] })
+	console.log(err);
+	var errembed = new MessageEmbed()
+		.setTitle(':warning: New Error')
+		.setColor('YELLOW')
+		.addFields(
+			{ name: ':pushpin: Type: ', value: `\`\`\`${err.name + "".split("", 150).join("") || "N/A"}\`\`\`` },
+			{
+				name: ':page_with_curl: Reason: ',
+				value: `\`\`\`${err.message + "".split("", 150).join("") || "N/A"}\`\`\``
+			},
+		)
+		.setTimestamp()
+	// client.channels.cache.get(config.ERROR).send({ embeds: [errembed] })
 });
